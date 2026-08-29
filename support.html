@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hỗ trợ — Photolean</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --text:#14161a; --muted:#5c6470; --line:#e3e6ea; --accent:#4f6bff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1115; --card:#171a20; --text:#e9ecf1; --muted:#9aa3b2; --line:#262b33; --accent:#8ea2ff; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:32px 20px 72px; background:var(--bg); color:var(--text);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:26px; }
+  .mark { width:46px; height:46px; border-radius:12px; flex:none;
+          background:linear-gradient(135deg,#4f8cff,#7a5cff); display:grid; place-items:center; font-size:22px; }
+  h1 { font-size:26px; margin:0; letter-spacing:-0.02em; }
+  .sub { color:var(--muted); font-size:14px; margin-top:2px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px;
+            padding:22px 24px; margin-bottom:18px; }
+  h2 { font-size:19px; margin:0 0 14px; }
+  h3 { font-size:15px; margin:20px 0 4px; }
+  h3:first-of-type { margin-top:0; }
+  p { margin:6px 0; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:26px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">🧹</div>
+    <div>
+      <h1>Hỗ trợ Photolean</h1>
+      <div class="sub">Dọn ảnh &amp; nén ảnh, chạy hoàn toàn trên máy</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Câu hỏi thường gặp</h2>
+
+    <h3>Xoá xong mà máy chưa trống thêm?</h3>
+    <p>Ảnh xoá đi nằm trong <em>Đã xoá gần đây</em> của app Ảnh thêm 30 ngày. Vào đó xoá
+    hẳn thì dung lượng mới được trả lại.</p>
+
+    <h3>Nén rồi mà tổng dung lượng lại tăng?</h3>
+    <p>iOS không cho ghi đè ảnh gốc, nên bản nén là một tệp mới. Bật <em>Xoá bản gốc</em>
+    trong bảng nén, hoặc kiểm tra bản nén xong rồi tự xoá bản gốc sau.</p>
+
+    <h3>App nói ảnh của tôi bị mờ nhưng tôi thấy vẫn nét</h3>
+    <p>Ngưỡng độ nét được tính theo chính thư viện của bạn. Vào Cài đặt, hạ
+    <em>Độ nhạy ảnh mờ</em> xuống Thấp — kết quả cập nhật ngay, không phải quét lại.</p>
+
+    <h3>Live Photo có nén được không?</h3>
+    <p>Mặc định bỏ qua để không làm mất phần video. Có thể bật trong bảng nén nếu bạn
+    chấp nhận chỉ giữ ảnh tĩnh.</p>
+
+    <h3>App có gửi ảnh của tôi đi đâu không?</h3>
+    <p>Không. App không kết nối mạng. Xem
+    <a href="./">chính sách quyền riêng tư</a>.</p>
+  </section>
+
+  <section>
+    <h2>Liên hệ</h2>
+    <p>Báo lỗi hoặc góp ý:
+    <a href="https://github.com/34306/photolean-privacy/issues/new">mở một issue tại đây</a>.
+    Mô tả giúp mẫu máy, phiên bản iOS và việc bạn đang làm khi gặp lỗi.</p>
+  </section>
+
+  <footer>Photolean · Huy Nguyen</footer>
+</main>
+</body>
+</html>
