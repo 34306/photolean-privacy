@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — Photolean</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #14161a; --muted: #5c6470;
+    --line: #e3e6ea; --accent: #4f6bff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --card: #171a20; --text: #e9ecf1; --muted: #9aa3b2;
+            --line: #262b33; --accent: #8ea2ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 72px;
+    background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+  .mark {
+    width: 46px; height: 46px; border-radius: 12px; flex: none;
+    background: linear-gradient(135deg, #4f8cff, #7a5cff);
+    display: grid; place-items: center; font-size: 22px;
+  }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 14px; margin: 2px 0 26px; }
+  section {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 22px 24px; margin-bottom: 18px;
+  }
+  h2 { font-size: 19px; margin: 0 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 15px; margin: 22px 0 6px; }
+  p, li { color: var(--text); }
+  .lead { font-size: 17px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 4px; font-size: 15px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  td:last-child { white-space: nowrap; color: var(--muted); }
+  a { color: var(--accent); }
+  .switch { display: flex; gap: 8px; margin-bottom: 22px; }
+  .switch a {
+    text-decoration: none; font-size: 14px; font-weight: 600;
+    padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card); color: var(--text);
+  }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 26px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">🧹</div>
+    <div>
+      <h1>Chính sách quyền riêng tư</h1>
+      <div class="sub">Photolean · cập nhật 29/08/2026</div>
+    </div>
+  </header>
+
+  <div class="switch">
+    <a href="#vi">Tiếng Việt</a>
+    <a href="#en">English</a>
+  </div>
+
+  <section id="vi">
+    <p class="lead"><strong>Photolean không thu thập, không lưu trữ và không truyền đi
+    bất kỳ dữ liệu nào của bạn.</strong> App không có tài khoản, không có máy chủ, không
+    có mã phân tích và không kết nối mạng. Mọi việc đọc, phân tích và nén ảnh/video đều
+    diễn ra ngay trên thiết bị.</p>
+
+    <h3>Dữ liệu app truy cập</h3>
+    <table>
+      <tr><th>Dữ liệu</th><th>Vì sao cần</th><th>Rời khỏi máy?</th></tr>
+      <tr><td>Ảnh và video trong thư viện</td><td>Tìm tệp nặng, ảnh mờ, ảnh trùng, ảnh chụp màn hình, biên lai, tài liệu; nén lại khi bạn yêu cầu</td><td>Không</td></tr>
+      <tr><td>Chữ nhận dạng trong ảnh (OCR)</td><td>Phân loại ảnh biên lai / bài học / văn bản để gợi ý dọn</td><td>Không</td></tr>
+      <tr><td>Ngày chụp, dung lượng, kích thước</td><td>Xếp hạng và nhóm ảnh</td><td>Không</td></tr>
+    </table>
+    <p>Kết quả phân tích (điểm độ nét, mã băm so trùng, nhãn phân loại) được lưu trong
+    vùng dữ liệu riêng của app trên máy bạn, chỉ để không phải quét lại từ đầu. Gỡ app
+    là toàn bộ dữ liệu này biến mất.</p>
+
+    <h3>Quyền app xin</h3>
+    <ul>
+      <li><strong>Quyền xem thư viện ảnh</strong> — để quét và hiển thị ảnh/video cho bạn chọn.</li>
+      <li><strong>Quyền thêm vào thư viện ảnh</strong> — để lưu bản đã nén trở lại thư viện.</li>
+    </ul>
+    <p>App không xin quyền vị trí, danh bạ, micro hay camera.</p>
+
+    <h3>Xoá ảnh</h3>
+    <p>App không tự ý xoá bất cứ thứ gì. Bạn chọn từng mục, và mỗi lần xoá đều do chính
+    iOS hiện hộp thoại xác nhận. Ảnh đã xoá nằm trong <em>Đã xoá gần đây</em> của app Ảnh
+    trong 30 ngày trước khi mất hẳn.</p>
+
+    <h3>Chia sẻ với bên thứ ba</h3>
+    <p>Không có. App không nhúng SDK quảng cáo, đo lường hay bất kỳ thư viện bên thứ ba nào.</p>
+
+    <h3>Trẻ em</h3>
+    <p>App không thu thập dữ liệu nên phù hợp với mọi lứa tuổi (xếp hạng 4+).</p>
+
+    <h3>Liên hệ</h3>
+    <p>Mọi thắc mắc xin gửi tại <a href="https://github.com/34306/photolean-privacy/issues">trang liên hệ này</a>.</p>
+  </section>
+
+  <section id="en">
+    <h2>Privacy Policy (English)</h2>
+    <p class="lead"><strong>Photolean collects no data.</strong> It has no account system,
+    no server, no analytics and makes no network connections. All scanning, analysis
+    (including on-device text recognition) and compression happen locally on your iPhone.</p>
+
+    <h3>What the app accesses</h3>
+    <table>
+      <tr><th>Data</th><th>Why</th><th>Leaves device?</th></tr>
+      <tr><td>Photos and videos in your library</td><td>Find large files, blurry shots, duplicates, screenshots, receipts and documents; re-encode them when you ask</td><td>No</td></tr>
+      <tr><td>Text recognised in images (OCR)</td><td>Classify receipts / lecture material / documents to suggest cleanup</td><td>No</td></tr>
+      <tr><td>Capture date, file size, dimensions</td><td>Rank and group items</td><td>No</td></tr>
+    </table>
+    <p>Analysis results (sharpness scores, perceptual hashes, category labels) are cached
+    inside the app's own container so repeat scans are fast. They never leave the device
+    and are removed when you delete the app.</p>
+
+    <h3>Permissions</h3>
+    <ul>
+      <li><strong>Photo library access</strong> — to scan and show your photos and videos.</li>
+      <li><strong>Photo library add access</strong> — to save compressed copies back to your library.</li>
+    </ul>
+    <p>The app does not request location, contacts, microphone or camera access.</p>
+
+    <h3>Deleting photos</h3>
+    <p>The app never deletes anything on its own. You select items, and iOS shows its own
+    confirmation dialog for every deletion. Deleted items stay in <em>Recently Deleted</em>
+    for 30 days.</p>
+
+    <h3>Third parties</h3>
+    <p>None. No advertising, analytics or third-party SDKs are embedded.</p>
+
+    <h3>Children</h3>
+    <p>The app collects no data and is suitable for all ages (rated 4+).</p>
+
+    <h3>Contact</h3>
+    <p>Questions? Reach out <a href="https://github.com/34306/photolean-privacy/issues">here</a>.</p>
+  </section>
+
+  <footer>Photolean · Huy Nguyen</footer>
+</main>
+</body>
+</html>
